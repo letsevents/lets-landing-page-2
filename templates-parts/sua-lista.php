@@ -4,7 +4,7 @@
         <div class="row equal">
 
             <div class="col-xs-12 visible-xs visible-sm xs-image">
-                <img src="<?php echo plugins_url('../img/lista@2x.png', __FILE__); ?>" alt="" class="img-responsive">
+                <img src="<?php echo plugins_url('../img/lista.svg', __FILE__); ?>" alt="" class="img-responsive">
             </div>
 
 
