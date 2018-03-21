@@ -13,7 +13,7 @@
                         <?php echo get_field('paragrafo_ola_tecnologia')?>
                     </p>
 
-                    <a class="btn-verde uppercase" href="https://app.lets.events/events/new"> <?php echo get_field('botao-ola-tecnologia')?></a>
+                    <a class="btn-verde uppercase" href="https://app.lets.events/events/new?utm_source=landingV2&utm_medium=homecta"> <?php echo get_field('botao-ola-tecnologia')?></a>
                 </div>
             </div>
         </div>
@@ -29,7 +29,7 @@
 <script>
 $(function () {
     var areas = $("#areas-atuacao").html();
-    var palavras = "<?php echo get_field('areas-atuacao')?>"  ;   
+    var palavras = "<?php echo get_field('areas-atuacao')?>"  ;
     var listaPalavras = palavras.split(',');
     changeWords(listaPalavras, 2500);
 });

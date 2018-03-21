@@ -4,7 +4,7 @@
             <div class="col-xs-12">
                 <a class="btn btn-cinza" href="" data-toggle="modal" data-target="#myModal">
                     <span>▶</span>
-                    <?php _traduzir('LETS IN 2 MINUTES', 'LETS EM 2 MINUTOS');?>
+                    <?php echo get_field('lets_em_2_min') ?>
                 </a>
             </div>
         </div>

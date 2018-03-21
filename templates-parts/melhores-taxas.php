@@ -20,7 +20,7 @@
                                 <span>%</span>
                             </p>
                             <p class="obs">
-                                <?php _traduzir('no boleto', 'no boleto'); ?>
+                                <?php echo get_field('no_boleto') ?>
                             </p>
                         </div>
                         <div class="col-sm-6 ">
@@ -28,7 +28,7 @@
                                 <span> %</span>
                             </p>
                             <p class="obs">
-                                <?php _traduzir('In the card', 'no cartão'); ?>
+                                <?php echo get_field('no_cartao') ?>
                             </p>
                         </div>
                     </div>
@@ -72,7 +72,7 @@
                         <span>,00</span>
                     </p>
                     <p class="obs">
-                        <?php _traduzir('really free', 'grátis de verdade'); ?>                        
+                        <?php echo get_field('gratis_de_verdade') ?>
                     </p>
                 </div>
 

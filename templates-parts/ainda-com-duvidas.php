@@ -42,45 +42,45 @@
             <div class="col-sm-12 col-md-9">
                 <div class="row">
                     <div class="col-sm-4">
-                        <h2><?php _traduzir('Institutional', 'Institucional')?></h2>
+                        <h2><?php echo get_field('institucional') ?></h2>
                         <ul class="list-unstyled">
                             <li>
                                 <a href="https://lets.events/blog">Blog</a>
                             </li>
                             <li>
                                 <a href="#melhores-taxas">
-                                    <?php _traduzir('Pricing', 'Preço')?>
+                                    <?php echo get_field('preco') ?>
                                 </a>
                             </li>
                         </ul>
                     </div>
                     <div class="col-sm-4">
-                        <h2><?php _traduzir('Solutions for organizers', 'Soluções para organizadores')?>
+                        <h2><?php echo get_field('solucoes_para_organizadores') ?>
                             </h2>
                         <ul class="list-unstyled">
                             <li>
                                 <a href="https://lets.events/listas-de-convidados">
-                                    <?php _traduzir('Guest list management', 'Gestão de listas de convidados')?>
+                                    <?php echo get_field('gestao_de_listas') ?>
                                 </a>
                             </li>
                             <li>
                                 <a href="https://lets.events">
-                                    <?php _traduzir('Ticket Sales', 'Venda de ingressos')?>
+                                    <?php echo get_field('venda_de_ingressos') ?>
                                 </a>
                             </li>
                         </ul>
                     </div>
                     <div class="col-sm-4">
-                        <h2><?php _traduzir('Support', 'Suporte')?></h2>
+                        <h2><?php echo get_field('suporte') ?></h2>
                         <ul class="list-unstyled">
                             <li>
                                 <a href="https://support.lets.events/">
-                                    <?php _traduzir('Frequently Asked Questions', 'Dúvidas frequentes')?>
+                                    <?php echo get_field('duvidas_frequentes') ?>
                                 </a>
                             </li>
                             <li>
                                 <a href="https://app.lets.events/terms-of-use">
-                                    <?php _traduzir('Terms of use', 'Termos de Uso')?>
+                                    <?php echo get_field('termos_de_uso') ?>
                                 </a>
                             </li>
                         </ul>

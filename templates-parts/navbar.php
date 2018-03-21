@@ -18,7 +18,7 @@
 
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="https://app.lets.events/profile/sign_in"><?php _traduzir('Sign in', 'Entrar'); ?></a>
+                    <a href="https://app.lets.events/profile/sign_in?utm_source=landingV2&utm_medium=navbarsignin"><?php echo get_field('botao_entrar') ?></a>
                 </li>
             </ul>
             <a href="#" class="btn-consultor navbar-right" id="fale-consultor" data-toggle="modal" data-target="#faleConsultor">><?php echo get_field('botao_falar_com_consultor') ?></a>

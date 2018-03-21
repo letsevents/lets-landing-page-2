@@ -1,9 +1,5 @@
 <?php
 
-function _traduzir($en, $pt){
-    _e("[:en]{$en} [:pb]{$pt}");
-}
-
 // Below functions will deregister ALL plugins but contact-form-7 from head and footer
 function pm_remove_all_scripts() {
     global $wp_scripts;
