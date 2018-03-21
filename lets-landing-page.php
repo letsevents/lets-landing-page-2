@@ -23,17 +23,17 @@ class PageTemplaterMmgv20 {
 	protected $templates;
 
 	/**
-	 * Returns an instance of this class. 
+	 * Returns an instance of this class.
 	 */
 	public static function get_instance() {
 
 		if ( null == self::$instance ) {
 			self::$instance = new PageTemplaterMmgv20();
-		} 
+		}
 
 		return self::$instance;
 
-	} 
+	}
 
 	/**
 	 * Initializes the plugin by setting filters and administration functions.
@@ -63,25 +63,25 @@ class PageTemplaterMmgv20 {
 
 		// Add a filter to the save post to inject out template into the page cache
 		add_filter(
-			'wp_insert_post_data', 
-			array( $this, 'register_project_templates' ) 
+			'wp_insert_post_data',
+			array( $this, 'register_project_templates' )
 		);
 
 
-		// Add a filter to the template include to determine if the page has our 
+		// Add a filter to the template include to determine if the page has our
 		// template assigned and return it's path
 		add_filter(
-			'template_include', 
-			array( $this, 'view_project_template') 
+			'template_include',
+			array( $this, 'view_project_template')
 		);
 
 
 		// Add your templates to this array.
 		$this->templates = array(
-			'index.php' => 'Landing page - 2.0',
+			'index_new.php' => 'Landing page - 2.0',
 		);
-			
-	} 
+
+	}
 
 	/**
 	 * Adds our template to the page dropdown for v4.7+
@@ -101,12 +101,12 @@ class PageTemplaterMmgv20 {
 		// Create the key used for the themes cache
 		$cache_key = 'page_templates-' . md5( get_theme_root() . '/' . get_stylesheet() );
 
-		// Retrieve the cache list. 
+		// Retrieve the cache list.
 		// If it doesn't exist, or it's empty prepare an array
 		$templates = wp_get_theme()->get_page_templates();
 		if ( empty( $templates ) ) {
 			$templates = array();
-		} 
+		}
 
 		// New cache, therefore remove the old one
 		wp_cache_delete( $cache_key , 'themes');
@@ -121,13 +121,13 @@ class PageTemplaterMmgv20 {
 
 		return $atts;
 
-	} 
+	}
 
 	/**
 	 * Checks if the template is assigned to the page
 	 */
 	public function view_project_template( $template ) {
-		
+
 		// Get global post
 		global $post;
 
@@ -137,13 +137,13 @@ class PageTemplaterMmgv20 {
 		}
 
 		// Return default template if we don't have a custom one defined
-		if ( ! isset( $this->templates[get_post_meta( 
-			$post->ID, '_wp_page_template', true 
+		if ( ! isset( $this->templates[get_post_meta(
+			$post->ID, '_wp_page_template', true
 		)] ) ) {
 			return $template;
-		} 
+		}
 
-		$file = plugin_dir_path( __FILE__ ). get_post_meta( 
+		$file = plugin_dir_path( __FILE__ ). get_post_meta(
 			$post->ID, '_wp_page_template', true
 		);
 
@@ -159,18 +159,18 @@ class PageTemplaterMmgv20 {
 
 	}
 
-} 
+}
 add_action( 'plugins_loaded', array( 'PageTemplaterMmgv20', 'get_instance' ) );
 
 //add CPT Depoimento
 
-function myCustonPosts(){
-		
-	
-	//DEPOIMENTOS	
+function myCustomPosts(){
+
+
+	//DEPOIMENTOS
 	$nomeSing = "Depoimento";
 	$nomePlural = "Depoimentos";
-	
+
 	$labels = array(
 			'name'               => $nomePlural,
 			'singular_name'      => $nomeSing,
@@ -187,7 +187,7 @@ function myCustonPosts(){
 			'not_found'          => 'Nenhum '.$nomeSing.' encontrado.',
 			'not_found_in_trash' => 'Nenhum '.$nomeSing.' na lixeira.',
 	);
-	
+
 	$args = array(
 			'labels'             => $labels,
 			'public'             => true,
@@ -204,21 +204,21 @@ function myCustonPosts(){
 			'supports'           => array('title', 'editor', 'thumbnail', 'excerpt', 'trackbacks', 'custom-fields', 'comments', 'revisions', 'page-attributes', 'post-formats' ),
 			'taxonomies'		=> array('category')
 	);
-	
+
 	register_post_type('depoimento', $args);
-			
+
 }
 
-add_action('init', 'myCustonPosts');
+add_action('init', 'myCustomPosts');
 
 
 
-function my_rewrite_flush() {
-	myCustonPosts();
+function my_new_rewrite_flush() {
+	myCustomPosts();
 	flush_rewrite_rules();
 }
 
-register_activation_hook( __FILE__, 'my_rewrite_flush' );
+register_activation_hook( __FILE__, 'my_new_rewrite_flush' );
 
 
 
