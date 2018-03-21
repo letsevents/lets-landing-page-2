@@ -6818,21 +6818,6 @@ body {
 /*
 * CSS Lets LP 02
  */
-.braco {
-  color: #ffffff;
-}
-.amarelo {
-  color: #FFA500;
-}
-.verde {
-  color: #52B152;
-}
-.azul {
-  color: #6ED3FF;
-}
-.cinza {
-  color: #646464;
-}
 .navbar-btn {
   margin-top: 3px;
 }
@@ -7754,22 +7739,8 @@ header .logo {
     line-height: 25px;
   }
 }
-#melhores-taxas .tabela-lets p.taxa {
-  padding-top: 16px;
-  font-family: Vinila Compressed;
-  font-size: 50px;
-  font-weight: 300;
-  line-height: 60px;
-}
-@media (max-width: 991px) {
-  #melhores-taxas .tabela-lets p.taxa {
-    font-size: 50px;
-    font-weight: 300;
-    line-height: 60px;
-  }
-}
-#melhores-taxas .tabela-lets p.taxa span {
-  font-size: 25px;
+#melhores-taxas .tabela-lets .taxa {
+  margin-top: 30px;
 }
 #melhores-taxas .tabela-lets p.obs {
   padding-top: 5px;
