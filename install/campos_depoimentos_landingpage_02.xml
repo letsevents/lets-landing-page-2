@@ -358,7 +358,7 @@ Taxa mínima: R$ 2,00.";s:7:"toolbar";s:5:"basic";s:12:"media_upload";s:2:"no";s
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>rule</wp:meta_key>
-			<wp:meta_value><![CDATA[a:5:{s:5:"param";s:13:"page_template";s:8:"operator";s:2:"==";s:5:"value";s:9:"index.php";s:8:"order_no";i:0;s:8:"group_no";i:0;}]]></wp:meta_value>
+			<wp:meta_value><![CDATA[a:5:{s:5:"param";s:13:"page_template";s:8:"operator";s:2:"==";s:5:"value";s:13:"index_new.php";s:8:"order_no";i:0;s:8:"group_no";i:0;}]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>field_5ab28e1f3135c</wp:meta_key>
