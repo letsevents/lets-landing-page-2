@@ -16,25 +16,19 @@
 
                     <div class="row">
                         <div class="col-sm-6">
-                            <p class="taxa azul ">5,99
-                                <span>%</span>
-                            </p>
+                            <img class="taxa" data-src="<?php echo plugins_url('../img/TaxaBoleto.svg', __FILE__) ?>" class="img-responsive" >
                             <p class="obs">
                                 <?php echo get_field('no_boleto') ?>
                             </p>
                         </div>
                         <div class="col-sm-6 ">
-                            <p class="taxa azul">8,99
-                                <span> %</span>
-                            </p>
+                            <img class="taxa" data-src="<?php echo plugins_url('../img/TaxaCartao.svg', __FILE__) ?>" class="img-responsive" >
                             <p class="obs">
                                 <?php echo get_field('no_cartao') ?>
                             </p>
                         </div>
                     </div>
                 </div>
-
-
 
 
                 <ul class="credit-cards visible-xs visible-sm">
@@ -57,9 +51,6 @@
                 <div class="cartoes visible-xs visible-sm ">
                     <?php echo get_field('melhores_taxas_cartoes') ?>
                 </div>
-
-
-
             </div>
 
             <div class="col-sm-4">
@@ -67,10 +58,7 @@
                     <h2>
                         <?php echo get_field('melhores_taxas_titulo_3') ?>
                     </h2>
-                    <p class="taxa verde">
-                        <span>R$ </span>0
-                        <span>,00</span>
-                    </p>
+                    <img class="taxa" data-src="<?php echo plugins_url('../img/TaxaGratis.svg', __FILE__) ?>" class="img-responsive" >
                     <p class="obs">
                         <?php echo get_field('gratis_de_verdade') ?>
                     </p>
