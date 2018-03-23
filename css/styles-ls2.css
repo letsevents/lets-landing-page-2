@@ -7905,7 +7905,7 @@ header .logo {
   }
 }
 #quem-ja-esta-usando #carousel-depoimentos .carousel-indicators {
-  bottom: 80px;
+  bottom: 60px;
 }
 @media (max-width: 767px) {
   #quem-ja-esta-usando #carousel-depoimentos .carousel-indicators {
@@ -7927,7 +7927,7 @@ header .logo {
   background-color: #1C8FD9;
 }
 #quem-ja-esta-usando #carousel-depoimentos .card-depoimento {
-  margin-bottom: 32px;
+  margin-bottom: 15px;
   border: 1px solid #DCDCDC;
   border-radius: 8px;
   background-color: #ffffff;
@@ -8030,15 +8030,23 @@ header .logo {
   }
 }
 #quem-ja-esta-usando #logo-clientes img {
-  max-width: 128px;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  opacity: 0.5;
+  transition: all 0.4s;
+  max-width: 96px;
   height: auto;
   margin: 30px;
 }
 @media (max-width: 767px) {
   #quem-ja-esta-usando #logo-clientes img {
-    max-width: 96px;
     margin: 20px;
   }
+}
+#quem-ja-esta-usando #logo-clientes img:hover {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+  opacity: 1;
 }
 #ainda-com-duvidas {
   background: linear-gradient(180deg, #3CC2EE 0%, #1C8FD9 100%, #1C8FD9 100%);

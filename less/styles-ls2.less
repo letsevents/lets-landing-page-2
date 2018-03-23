@@ -764,18 +764,16 @@ header{
             padding-bottom: 29px;
 
         }
-
     }
 
 
     #carousel-depoimentos{
-
         .carousel-indicators{
 
             .hidden-xs;
             .hidden-sm;
 
-            bottom: 80px;
+            bottom: 60px;
 
             li{
                 border: 1px solid #D8D8D8;
@@ -794,7 +792,7 @@ header{
 
 
         .card-depoimento{
-            margin-bottom: 32px;
+            margin-bottom: 15px;
             border: 1px solid #DCDCDC;
             border-radius: 8px;
             background-color: @branco;
@@ -903,13 +901,24 @@ header{
         }
 
         img {
-            max-width: 128px;
+            -webkit-filter: grayscale(1);
+            filter: grayscale(1);
+            opacity: 0.5;
+
+            transition: all 0.4s;
+
+            max-width: 96px;
             height: auto;
             margin: 30px;
 
             @media (max-width: @screen-xs-max){
-                max-width: 96px;
                 margin: 20px;
+            }
+
+            &:hover {
+                -webkit-filter: grayscale(0);
+                filter: grayscale(0);
+                opacity: 1;
             }
         }
     }
