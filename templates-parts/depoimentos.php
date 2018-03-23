@@ -1,7 +1,7 @@
 <?php
 $args = array(
     'post_type' => 'depoimento',
-    'posts_per_page' => 4,
+    'posts_per_page' => 10,
     'order' => 'DESC',
     'orderby' => 'menu_order',
 );

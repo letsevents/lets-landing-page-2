@@ -12,3 +12,11 @@ function pm_remove_all_styles() {
     $wp_styles->queue = array('contact-form-7');
 }
 add_action('wp_print_styles', 'pm_remove_all_styles', 100);
+
+// There are plugins in production including old versions of jQuery
+// This way we ensure the jquery script we declared in the index_new.php file
+// is the one used.
+function include_our_jquery() {
+	wp_deregister_script('jquery');
+}
+add_action('wp_enqueue_scripts', 'include_our_jquery');

@@ -4,9 +4,9 @@
             <div class="col-xs-12 col-sm-8 col-sm-offset-2">
                 <a name="melhores-taxas"></a>
                 <h1><?php echo get_field('melhores_taxas_titulo_1') ?></h1>
-                <p class="desc">
+                <div class="desc">
                     <?php echo get_field('melhores_taxas_descricao') ?>
-                </p>
+                </div>
             </div>
         </div>
         <div class="row">
