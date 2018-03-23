@@ -7926,38 +7926,40 @@ header .logo {
   border: 1px solid #1C8FD9;
   background-color: #1C8FD9;
 }
-#quem-ja-esta-usando #carousel-depoimentos .carousel-inner .item .card-depoimento {
-  margin-bottom: 46px;
-  padding: 48px;
+#quem-ja-esta-usando #carousel-depoimentos .card-depoimento {
+  margin-bottom: 32px;
   border: 1px solid #DCDCDC;
   border-radius: 8px;
   background-color: #ffffff;
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  display: flex;
 }
-#quem-ja-esta-usando #carousel-depoimentos .carousel-inner .item .card-depoimento img {
+@media (max-width: 991px) {
+  #quem-ja-esta-usando #carousel-depoimentos .card-depoimento {
+    margin-bottom: 24px;
+    flex-direction: column;
+  }
+}
+#quem-ja-esta-usando #carousel-depoimentos .card-depoimento img {
   width: 170px;
-  height: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
-#quem-ja-esta-usando #carousel-depoimentos .carousel-inner .item .card-depoimento h2 {
-  padding-top: 43px;
+#quem-ja-esta-usando #carousel-depoimentos .card-depoimento h2 {
+  padding-top: 18px;
   text-align: center;
   color: #1C8FD9;
   font-family: Bernina Sans Condense Bold;
   font-size: 18px;
   line-height: 25px;
 }
-@media (max-width: 991px) {
-  #quem-ja-esta-usando #carousel-depoimentos .carousel-inner .item .card-depoimento h2 {
-    padding-top: 18px;
-    padding-bottom: 42px;
+@media (min-width: 992px) {
+  #quem-ja-esta-usando #carousel-depoimentos .card-depoimento h2 {
+    padding-top: 43px;
+    padding-bottom: 12px;
     font-size: 16px;
     line-height: 22px;
   }
 }
-#quem-ja-esta-usando #carousel-depoimentos .carousel-inner .item .card-depoimento h3 {
+#quem-ja-esta-usando #carousel-depoimentos .card-depoimento h3 {
   padding-bottom: 10px;
   color: #3C3C3C;
   font-family: Bernina Sans Condense Bold;
@@ -7967,35 +7969,76 @@ header .logo {
   text-transform: uppercase;
 }
 @media (max-width: 991px) {
-  #quem-ja-esta-usando #carousel-depoimentos .carousel-inner .item .card-depoimento h3 {
+  #quem-ja-esta-usando #carousel-depoimentos .card-depoimento h3 {
     font-size: 20px;
     line-height: 28px;
   }
 }
-#quem-ja-esta-usando #carousel-depoimentos .carousel-inner .item .card-depoimento p {
+#quem-ja-esta-usando #carousel-depoimentos .card-depoimento p {
   color: #3C3C3C;
   font-family: Bernina Sans Regular;
   font-size: 16px;
   line-height: 28px;
 }
 @media (max-width: 991px) {
-  #quem-ja-esta-usando #carousel-depoimentos .carousel-inner .item .card-depoimento p {
+  #quem-ja-esta-usando #carousel-depoimentos .card-depoimento p {
     font-size: 12px;
     line-height: 22px;
   }
 }
+#quem-ja-esta-usando #carousel-depoimentos .card-depoimento .card-depoimento__content,
+#quem-ja-esta-usando #carousel-depoimentos .card-depoimento .card-depoimento__img-wrapper {
+  padding: 24px;
+}
+@media (min-width: 992px) {
+  #quem-ja-esta-usando #carousel-depoimentos .card-depoimento .card-depoimento__content,
+  #quem-ja-esta-usando #carousel-depoimentos .card-depoimento .card-depoimento__img-wrapper {
+    padding: 48px;
+  }
+}
+#quem-ja-esta-usando #carousel-depoimentos .card-depoimento .card-depoimento__img-wrapper {
+  border-right: 1px solid #ccc;
+}
+@media (max-width: 991px) {
+  #quem-ja-esta-usando #carousel-depoimentos .card-depoimento .card-depoimento__img-wrapper {
+    padding-bottom: 0;
+  }
+}
+#quem-ja-esta-usando #carousel-depoimentos .card-depoimento .card-depoimento__img {
+  border-radius: 50%;
+  display: inline-block;
+  width: 170px;
+  height: 170px;
+  background-size: cover;
+  background-position: center center;
+}
+#quem-ja-esta-usando #carousel-depoimentos .card-depoimento .card-depoimento__content {
+  flex-grow: 1;
+}
 #quem-ja-esta-usando #logo-clientes {
-  margin-top: 46px;
-  margin-bottom: 99px;
+  margin-top: 36px;
+  margin-bottom: 90px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 }
+@media (max-width: 991px) {
+  #quem-ja-esta-usando #logo-clientes {
+    margin-top: 12px;
+    margin-bottom: 50px;
+  }
+}
 #quem-ja-esta-usando #logo-clientes img {
   max-width: 128px;
   height: auto;
   margin: 30px;
+}
+@media (max-width: 767px) {
+  #quem-ja-esta-usando #logo-clientes img {
+    max-width: 96px;
+    margin: 20px;
+  }
 }
 #ainda-com-duvidas {
   background: linear-gradient(180deg, #3CC2EE 0%, #1C8FD9 100%, #1C8FD9 100%);

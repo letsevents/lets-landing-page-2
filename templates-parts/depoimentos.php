@@ -9,14 +9,7 @@ $args = array(
 $the_query = new WP_Query($args);
 ?>
 
-<!-- DEPOIMENTOS -->
-
-
 <div id="carousel-depoimentos" class="carousel slide" data-ride="carousel" data-interval="10000">  
-
-
-
-    <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
         <?php
         // The Loop
@@ -47,12 +40,7 @@ $the_query = new WP_Query($args);
                 endif;
                 ?>
         </ol>
-
     </div><!-- carousel-inner -->
-
 </div>
-
-
-
 
 <?php wp_reset_postdata(); ?>
