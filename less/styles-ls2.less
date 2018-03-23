@@ -793,93 +793,124 @@ header{
         }
 
 
-        .carousel-inner{
-            .item{
-                .card-depoimento{
+        .card-depoimento{
+            margin-bottom: 32px;
+            border: 1px solid #DCDCDC;
+            border-radius: 8px;
+            background-color: @branco;
+            box-shadow: 0 6px 10px 0 rgba(0,0,0,0.1);
 
-                    margin-bottom: 46px;
-                    padding: 48px;
+            display: flex;
 
+            @media (max-width: @screen-sm-max){
+                margin-bottom: 24px;
+                flex-direction: column;
+            }
 
-                    border: 1px solid #DCDCDC;
-                    border-radius: 8px;
-                    background-color: @branco;
-                    box-shadow: 0 6px 10px 0 rgba(0,0,0,0.1);
+            img { width: 170px; }
 
+            h2 {
+                padding-top: 18px;
+                .text-center;
+                color: #1C8FD9;
+                font-family: @berdina-condense;
+                font-size: 18px;
+                line-height: 25px;
 
-                    img{
-                        width: 170px;
-                        height: auto;
-                        .center-block;
-                    }
-
-                    h2{
-                        padding-top: 43px;
-                        .text-center;
-                        color: #1C8FD9;
-                        font-family: @berdina-condense;
-                        font-size: 18px;
-                        line-height: 25px;
-
-                        @media (max-width: @screen-sm-max){
-                            padding-top: 18px;
-                            padding-bottom: 42px;
-                            font-size: 16px;
-                            line-height: 22px;
-                        }
-
-
-                    }
-
-                    h3{
-
-                        padding-bottom: 10px;
-                        color: #3C3C3C;
-                        font-family: @berdina-condense;
-                        font-size: 20px;
-                        letter-spacing: 1px;
-                        line-height: 28px;
-                        .text-uppercase;
-
-                        @media (max-width: @screen-sm-max){
-                            font-size: 20px;
-                            line-height: 28px;
-
-                        }
-
-                    }
-
-                    p{
-
-                        color: #3C3C3C;
-                        font-family: @berdina;
-                        font-size: 16px;
-                        line-height: 28px;
-
-                        @media (max-width: @screen-sm-max){
-                            font-size: 12px;
-                            line-height: 22px;
-
-                        }
-                    }
+                @media (min-width: @screen-md-min){
+                    padding-top: 43px;
+                    padding-bottom: 12px;
+                    font-size: 16px;
+                    line-height: 22px;
                 }
             }
+
+            h3 {
+
+                padding-bottom: 10px;
+                color: #3C3C3C;
+                font-family: @berdina-condense;
+                font-size: 20px;
+                letter-spacing: 1px;
+                line-height: 28px;
+                .text-uppercase;
+
+                @media (max-width: @screen-sm-max){
+                    font-size: 20px;
+                    line-height: 28px;
+                }
+            }
+
+            p {
+
+                color: #3C3C3C;
+                font-family: @berdina;
+                font-size: 16px;
+                line-height: 28px;
+
+                @media (max-width: @screen-sm-max){
+                    font-size: 12px;
+                    line-height: 22px;
+
+                }
+            }
+
+            .card-depoimento__content,
+            .card-depoimento__img-wrapper {
+                padding: 24px;
+
+                @media (min-width: @screen-md-min){
+                    padding: 48px;
+                }
+            }
+
+            .card-depoimento__img-wrapper {
+                border-right: 1px solid #ccc;
+
+                @media (max-width: @screen-sm-max){
+                    padding-bottom: 0;
+                }
+            }
+
+            .card-depoimento__img {
+                border-radius: 50%;
+                display: inline-block;
+                width: 170px;
+                height: 170px;
+                background-size: cover;
+                background-position: center center;
+            }
+
+            .card-depoimento__content {
+                flex-grow: 1;
+            }
         }
+
     }
 
     #logo-clientes{
-        margin-top: 46px;
-        margin-bottom: 99px;
+        margin-top: 36px;
+        margin-bottom: 90px;
 
         display: flex;
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
 
+        @media (max-width: @screen-sm-max){
+            margin-top: 12px;
+            margin-bottom: 50px;
+        }
+
         img {
             max-width: 128px;
             height: auto;
             margin: 30px;
+
+            @media (max-width: @screen-xs-max){
+                max-width: 96px;
+                margin: 20px;
+            }
         }
     }
 
@@ -925,7 +956,7 @@ header{
 
         .text-left;
 
-        h2{
+        h2 {
             padding-bottom: 18px;
             font-family: @berdina-bold;
             font-size: 14px;
