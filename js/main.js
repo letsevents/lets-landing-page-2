@@ -3,6 +3,15 @@ $.extend($.lazyLoadXT, { edgeY:  400 });
 $(function () {
     scrollSmooth();
     handleFixedCTAPosition();
+
+    // Manually fix issue with lazy loading images on the carousel
+    $('.carousel').on('slide.bs.carousel', function(evt) {
+        var $displayedSlide = $(evt.relatedTarget);
+
+        var $stillNotLoaded = $displayedSlide.find('[data-bg]');
+        $stillNotLoaded.css('background-image', 'url(' + $stillNotLoaded.data('bg') + ')');
+        $stillNotLoaded.removeData('bg');
+    })
 });
 
 function changeWords(wordsArray, intervalo) {

@@ -11,7 +11,7 @@
         <div class="col-sm-10 col-sm-offset-1">
             <div class="card-depoimento">
                 <div class='text-center card-depoimento__img-wrapper'>
-                    <div class="card-depoimento__img" style="background-image:url(<?php echo get_field('foto') ?>)">
+                    <div class="card-depoimento__img" data-bg="<?php echo get_field('foto') ?>">
                     </div>
 
                     <h2>

@@ -9,7 +9,7 @@ $args = array(
 $the_query = new WP_Query($args);
 ?>
 
-<div id="carousel-depoimentos" class="carousel slide" data-ride="carousel" data-interval="10000">  
+<div id="carousel-depoimentos" class="carousel slide" data-ride="carousel" data-interval="10000">
     <div class="carousel-inner" role="listbox">
         <?php
         // The Loop
