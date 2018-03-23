@@ -769,29 +769,27 @@ header{
 
     #carousel-depoimentos{
         .carousel-indicators{
-
-            .hidden-xs;
-            .hidden-sm;
-
-            bottom: 60px;
+            bottom: -30px;
 
             li{
                 border: 1px solid #D8D8D8;
                 border-radius: 10px;
                 background-color: #D8D8D8;
 
-                &.active{
-
-                    border: 1px solid #1C8FD9;
-                    background-color:#1C8FD9;
-
+                @media (max-width: @screen-sm-max) {
+                    width: 15px;
+                    height: 15px;
+                    margin: 5px;
                 }
 
+                &.active{
+                    border: 1px solid #1C8FD9;
+                    background-color:#1C8FD9;
+                }
             }
         }
 
-
-        .card-depoimento{
+        .card-depoimento {
             margin-bottom: 15px;
             border: 1px solid #DCDCDC;
             border-radius: 8px;
@@ -803,12 +801,13 @@ header{
             @media (max-width: @screen-sm-max){
                 margin-bottom: 24px;
                 flex-direction: column;
+                min-height: 460px;
             }
 
             img { width: 170px; }
 
             h2 {
-                padding-top: 18px;
+                padding-top: 10px;
                 .text-center;
                 color: #1C8FD9;
                 font-family: @berdina-condense;
@@ -816,8 +815,6 @@ header{
                 line-height: 25px;
 
                 @media (min-width: @screen-md-min){
-                    padding-top: 43px;
-                    padding-bottom: 12px;
                     font-size: 16px;
                     line-height: 22px;
                 }

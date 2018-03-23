@@ -7905,22 +7905,19 @@ header .logo {
   }
 }
 #quem-ja-esta-usando #carousel-depoimentos .carousel-indicators {
-  bottom: 60px;
-}
-@media (max-width: 767px) {
-  #quem-ja-esta-usando #carousel-depoimentos .carousel-indicators {
-    display: none !important;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  #quem-ja-esta-usando #carousel-depoimentos .carousel-indicators {
-    display: none !important;
-  }
+  bottom: -30px;
 }
 #quem-ja-esta-usando #carousel-depoimentos .carousel-indicators li {
   border: 1px solid #D8D8D8;
   border-radius: 10px;
   background-color: #D8D8D8;
+}
+@media (max-width: 991px) {
+  #quem-ja-esta-usando #carousel-depoimentos .carousel-indicators li {
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+  }
 }
 #quem-ja-esta-usando #carousel-depoimentos .carousel-indicators li.active {
   border: 1px solid #1C8FD9;
@@ -7938,13 +7935,14 @@ header .logo {
   #quem-ja-esta-usando #carousel-depoimentos .card-depoimento {
     margin-bottom: 24px;
     flex-direction: column;
+    min-height: 460px;
   }
 }
 #quem-ja-esta-usando #carousel-depoimentos .card-depoimento img {
   width: 170px;
 }
 #quem-ja-esta-usando #carousel-depoimentos .card-depoimento h2 {
-  padding-top: 18px;
+  padding-top: 10px;
   text-align: center;
   color: #1C8FD9;
   font-family: Bernina Sans Condense Bold;
@@ -7953,8 +7951,6 @@ header .logo {
 }
 @media (min-width: 992px) {
   #quem-ja-esta-usando #carousel-depoimentos .card-depoimento h2 {
-    padding-top: 43px;
-    padding-bottom: 12px;
     font-size: 16px;
     line-height: 22px;
   }
