@@ -7621,7 +7621,7 @@ header .logo {
 #venda-mais .container {
   position: relative;
   padding-top: 20vh;
-  background-image: url(../img/ingresso@2x.png);
+  background-image: url(../img/ingresso.svg);
 }
 @media (max-width: 991px) {
   #venda-mais .container {
@@ -7647,7 +7647,7 @@ header .logo {
   }
 }
 #sua-lista .container {
-  background-image: url(../img/lista@2x.png);
+  background-image: url(../img/lista.svg);
 }
 @media (max-width: 991px) {
   #sua-lista .container {
@@ -7656,7 +7656,7 @@ header .logo {
 }
 #formidaveis .container {
   padding-top: 60px;
-  background-image: url(../img/ingresso-lista@2x.png);
+  background-image: url(../img/ingresso-lista.svg);
   /* Adds a floating white gradient that simulates a fade effect when
     /* the image appears beneath */
 }
