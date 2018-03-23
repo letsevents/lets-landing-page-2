@@ -7987,19 +7987,15 @@ header .logo {
 #quem-ja-esta-usando #logo-clientes {
   margin-top: 46px;
   margin-bottom: 99px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 #quem-ja-esta-usando #logo-clientes img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
+  max-width: 128px;
   height: auto;
-}
-@media (max-width: 991px) {
-  #quem-ja-esta-usando #logo-clientes img {
-    width: 60%;
-    padding-bottom: 50px;
-  }
+  margin: 30px;
 }
 #ainda-com-duvidas {
   background: linear-gradient(180deg, #3CC2EE 0%, #1C8FD9 100%, #1C8FD9 100%);

@@ -871,19 +871,16 @@ header{
         margin-top: 46px;
         margin-bottom: 99px;
 
-        img{
-            .center-block;
-            width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        img {
+            max-width: 128px;
             height: auto;
-
-            @media (max-width: @screen-sm-max){
-                width: 60%;
-                padding-bottom: 50px;
-
-            }
+            margin: 30px;
         }
-
-
     }
 
 }//#quem-ja-esta-usando
