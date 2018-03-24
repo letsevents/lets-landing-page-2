@@ -15,7 +15,7 @@
                     </div>
 
                     <h2>
-                        <?php echo get_field('autor') ?>
+                        <?php echo get_field('autor') ?>, <?php echo get_field('referencia_do_autor') ?>
                     </h2>
                 </div>
                 <div class='card-depoimento__content'>

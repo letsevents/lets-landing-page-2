@@ -7948,11 +7948,14 @@ header .logo {
   font-family: Bernina Sans Condense Bold;
   font-size: 18px;
   line-height: 25px;
+  margin: 0 auto;
 }
 @media (min-width: 992px) {
   #quem-ja-esta-usando #carousel-depoimentos .card-depoimento h2 {
     font-size: 16px;
     line-height: 22px;
+    max-width: 200px;
+    height: 54px;
   }
 }
 #quem-ja-esta-usando #carousel-depoimentos .card-depoimento h3 {
