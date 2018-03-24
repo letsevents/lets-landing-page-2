@@ -7525,7 +7525,7 @@ header .logo {
   padding-bottom: 18px;
 }
 #ola-tecnologia {
-  min-height: 500px;
+  min-height: 600px;
   background: no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -7704,7 +7704,7 @@ header .logo {
     padding-bottom: 8px;
   }
 }
-#melhores-taxas p.desc {
+#melhores-taxas .desc {
   color: #3C3C3C;
   font-size: 16px;
   line-height: 28px;
@@ -7712,10 +7712,10 @@ header .logo {
   padding-bottom: 60px;
 }
 @media (max-width: 991px) {
-  #melhores-taxas p.desc {
+  #melhores-taxas .desc {
     font-size: 14px;
     line-height: 24px;
-    padding-bottom: 36px;
+    padding-bottom: 20px;
   }
 }
 #melhores-taxas .tabela-lets {
@@ -7792,7 +7792,7 @@ header .logo {
   }
 }
 #sua-audiencia {
-  min-height: 500px;
+  min-height: 600px;
   height: 100vh;
   background: no-repeat center center;
   -webkit-background-size: cover;
@@ -7808,7 +7808,7 @@ header .logo {
 }
 @media (max-width: 991px) {
   #sua-audiencia h1 {
-    padding-top: 50px;
+    padding-top: 20px;
     padding-bottom: 8px;
   }
 }
@@ -7817,6 +7817,7 @@ header .logo {
   font-family: Bernina Sans Regular;
   font-size: 16px;
   line-height: 28px;
+  text-shadow: 0 0 10px #fff;
 }
 @media (max-width: 991px) {
   #sua-audiencia p {
@@ -7826,7 +7827,7 @@ header .logo {
   }
 }
 #conheca-seu-publico {
-  min-height: 500px;
+  min-height: 600px;
   height: 100vh;
   background: no-repeat center center;
   -webkit-background-size: cover;
@@ -7843,7 +7844,7 @@ header .logo {
 }
 @media (max-width: 991px) {
   #conheca-seu-publico h1 {
-    padding-top: 50px;
+    padding-top: 30px;
     padding-bottom: 10px;
   }
 }
@@ -7852,6 +7853,7 @@ header .logo {
   font-family: Bernina Sans Regular;
   font-size: 16px;
   line-height: 28px;
+  text-shadow: 0 0 10px #355e62;
 }
 #conheca-seu-publico p span {
   font-weight: bold;
@@ -7869,6 +7871,7 @@ header .logo {
 }
 @media (max-width: 991px) {
   #menos-fila h1 {
+    padding-top: 50px;
     padding-bottom: 10px;
   }
 }
@@ -7900,7 +7903,7 @@ header .logo {
 }
 @media (max-width: 991px) {
   #quem-ja-esta-usando h1 {
-    padding-top: 140px;
+    padding-top: 50px;
     padding-bottom: 29px;
   }
 }
