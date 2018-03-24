@@ -8021,7 +8021,7 @@ header .logo {
 }
 @media (max-width: 991px) {
   #quem-ja-esta-usando #logo-clientes {
-    margin-top: 12px;
+    margin-top: 24px;
     margin-bottom: 50px;
   }
 }
@@ -8032,7 +8032,7 @@ header .logo {
   transition: all 0.4s;
   max-width: 96px;
   height: auto;
-  margin: 30px;
+  margin: 20px 30px 0;
 }
 @media (max-width: 767px) {
   #quem-ja-esta-usando #logo-clientes img {
