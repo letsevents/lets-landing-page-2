@@ -2,8 +2,8 @@
 $args = array(
     'post_type' => 'depoimento',
     'posts_per_page' => 10,
-    'order' => 'DESC',
-    'orderby' => 'menu_order',
+    'order' => 'ASC',
+    'orderby' => 'title',
 );
 
 $the_query = new WP_Query($args);
