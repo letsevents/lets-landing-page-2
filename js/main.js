@@ -12,6 +12,13 @@ $(function () {
         $stillNotLoaded.css('background-image', 'url(' + $stillNotLoaded.data('bg') + ')');
         $stillNotLoaded.removeData('bg');
     })
+
+    var areas = $("#areas-atuacao").html();
+    changeWords(window.listaPalavras, 2500);
+
+    $("#myModal").on('hidden.bs.modal', function (e) {
+        $("#myModal iframe").attr("src", $("#myModal iframe").attr("src"));
+    });
 });
 
 function changeWords(wordsArray, intervalo) {

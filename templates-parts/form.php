@@ -5,7 +5,7 @@
                 <img data-src="<?php echo plugins_url('../img/Apple@2x.png', __FILE__) ?>" alt="" class="img-responsive">
             </a>
 
-            <a href="">
+            <a class='hidden' href="">
                 <img data-src="<?php echo plugins_url('../img/GooglePlay@2x.png', __FILE__) ?>" alt="" class="img-responsive">
             </a>
         </div>
