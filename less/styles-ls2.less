@@ -133,7 +133,6 @@ body{
     padding: 12px 25px;
     border-radius: 25px;
     .text-uppercase;
-    //box-shadow: 0 0 0 1px rgba(0,0,0,0.1), inset 0 -1px 0 0 rgba(0,0,0,0.3), 0 4px 10px 0 rgba(0,0,0,0.2);
 
 }
 
@@ -160,7 +159,6 @@ body{
 .btn-verde{
     .btn-padrao;
     .button-variant(@branco; @verde; @verde);
-
 }
 
 .btn-consultor{
@@ -592,7 +590,7 @@ header{
             padding-top: 5px;
             padding-bottom: 30px;
             .text-uppercase;
-            color: #DCDCDC;;
+            color: #A0A0A0;
             font-family: @berdina-condense;
         }
     }
@@ -630,6 +628,11 @@ header{
     }
 
 
+    .cartoes p { 
+        max-width: 320px; 
+        margin: 0 auto;
+    }
+
     .cartoes p, p.info{
         color: #646464;
         font-family: @berdina;
@@ -652,7 +655,7 @@ header{
     .bkg-img;
 
     h1{
-        padding-top: 84px;
+        padding-top: 70px;
         padding-bottom: 12px;
         color: #3C3C3C;
 
@@ -681,7 +684,7 @@ header{
     .bkg-img;
 
     h1{
-        padding-top: 109px;
+        padding-top: 50px;
         padding-bottom: 12px;
         color: @branco;
         .text-center;
@@ -771,7 +774,8 @@ header{
 
     #carousel-depoimentos{
         .carousel-indicators{
-            bottom: -30px;
+            bottom: -46px;
+            z-index: 1;
 
             li{
                 border: 1px solid #D8D8D8;
@@ -953,6 +957,10 @@ header{
         padding-bottom: 30px;
     }
 
+    .btn-verde {
+        rgba(0, 0, 0, 0.35) 0px 3px 15px 0px;
+    }
+
     .footer {
         margin-top: 80px;
         padding: 30px;
@@ -1089,20 +1097,17 @@ header{
             }
 
         }
-
-
-
-
     }
 }
 
 .cta-fixo {
     position: fixed;
-    bottom: 2vh;
+    bottom: 4vh;
     left: 50%;
     transition: opacity 0.8s;
     transform: translateX(-50%);
     opacity: 1;
+    z-index: 2;
 }
 
 .cta-fixo-hidden {

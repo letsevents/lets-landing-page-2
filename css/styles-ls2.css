@@ -7746,7 +7746,7 @@ header .logo {
   padding-top: 5px;
   padding-bottom: 30px;
   text-transform: uppercase;
-  color: #DCDCDC;
+  color: #A0A0A0;
   font-family: Bernina Sans Condense Bold;
 }
 #melhores-taxas .tabela-pago h2 {
@@ -7778,6 +7778,10 @@ header .logo {
   max-width: 34px;
   height: auto;
 }
+#melhores-taxas .cartoes p {
+  max-width: 320px;
+  margin: 0 auto;
+}
 #melhores-taxas .cartoes p,
 #melhores-taxas p.info {
   color: #646464;
@@ -7802,7 +7806,7 @@ header .logo {
   display: block;
 }
 #sua-audiencia h1 {
-  padding-top: 84px;
+  padding-top: 70px;
   padding-bottom: 12px;
   color: #3C3C3C;
 }
@@ -7837,7 +7841,7 @@ header .logo {
   display: block;
 }
 #conheca-seu-publico h1 {
-  padding-top: 109px;
+  padding-top: 50px;
   padding-bottom: 12px;
   color: #ffffff;
   text-align: center;
@@ -7908,7 +7912,8 @@ header .logo {
   }
 }
 #quem-ja-esta-usando #carousel-depoimentos .carousel-indicators {
-  bottom: -30px;
+  bottom: -46px;
+  z-index: 1;
 }
 #quem-ja-esta-usando #carousel-depoimentos .carousel-indicators li {
   border: 1px solid #D8D8D8;
@@ -8074,6 +8079,9 @@ header .logo {
   line-height: 28px;
   padding-bottom: 30px;
 }
+#ainda-com-duvidas .btn-verde {
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+}
 #ainda-com-duvidas .footer {
   margin-top: 80px;
   padding: 30px;
@@ -8185,11 +8193,12 @@ header .logo {
 }
 .cta-fixo {
   position: fixed;
-  bottom: 2vh;
+  bottom: 4vh;
   left: 50%;
   transition: opacity 0.8s;
   transform: translateX(-50%);
   opacity: 1;
+  z-index: 2;
 }
 .cta-fixo-hidden {
   opacity: 0;
