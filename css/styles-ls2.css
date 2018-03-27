@@ -7534,6 +7534,7 @@ header .logo {
   display: block;
   height: 100vh;
   position: relative;
+  z-index: 4;
 }
 #ola-tecnologia .page-content {
   position: absolute;
@@ -7585,7 +7586,7 @@ header .logo {
   text-transform: uppercase;
   position: absolute;
   width: 200px;
-  bottom: 25px;
+  bottom: 10vh;
   left: 50%;
   margin-left: -100px;
   text-align: center;
@@ -7809,15 +7810,9 @@ header .logo {
   display: block;
 }
 #sua-audiencia h1 {
-  padding-top: 70px;
-  padding-bottom: 12px;
+  padding-top: 8vh;
+  padding-bottom: 1vh;
   color: #3C3C3C;
-}
-@media (max-width: 991px) {
-  #sua-audiencia h1 {
-    padding-top: 20px;
-    padding-bottom: 8px;
-  }
 }
 #sua-audiencia p {
   color: #3C3C3C;
@@ -7844,16 +7839,10 @@ header .logo {
   display: block;
 }
 #conheca-seu-publico h1 {
-  padding-top: 50px;
-  padding-bottom: 12px;
+  padding-top: 7vh;
+  padding-bottom: 1vh;
   color: #ffffff;
   text-align: center;
-}
-@media (max-width: 991px) {
-  #conheca-seu-publico h1 {
-    padding-top: 30px;
-    padding-bottom: 10px;
-  }
 }
 #conheca-seu-publico p {
   color: #ffffff;
@@ -8026,7 +8015,7 @@ header .logo {
   flex-grow: 1;
 }
 #quem-ja-esta-usando #logo-clientes {
-  margin-top: 36px;
+  margin-top: 48px;
   margin-bottom: 90px;
   display: flex;
   align-items: center;
@@ -8035,7 +8024,7 @@ header .logo {
 }
 @media (max-width: 991px) {
   #quem-ja-esta-usando #logo-clientes {
-    margin-top: 24px;
+    margin-top: 36px;
     margin-bottom: 50px;
   }
 }
@@ -8062,7 +8051,7 @@ header .logo {
   background: linear-gradient(180deg, #3CC2EE 0%, #1C8FD9 100%, #1C8FD9 100%);
   color: #ffffff;
   position: relative;
-  z-index: 2;
+  z-index: 4;
   text-align: center;
 }
 #ainda-com-duvidas h1 {

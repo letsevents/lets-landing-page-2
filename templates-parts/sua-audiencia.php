@@ -2,7 +2,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-sm-4">
+            <div class="col-sm-5">
                 <h1>
                     <?php echo get_field('sua_audiencia_titulo') ?>
                 </h1>
