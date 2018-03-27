@@ -19,6 +19,28 @@ $(function () {
     $("#myModal").on('hidden.bs.modal', function (e) {
         $("#myModal iframe").attr("src", $("#myModal iframe").attr("src"));
     });
+
+    $.QueryString = (function(paramsArray) {
+        console.log(paramsArray);
+        let params = {};
+
+        for (let i = 0; i < paramsArray.length; ++i)
+        {
+            let param = paramsArray[i]
+                .split('=', 2);
+
+            if (param.length !== 2)
+                continue;
+
+            params[param[0]] = decodeURIComponent(param[1].replace(/\+/g, " "));
+        }
+
+        return params;
+    })(window.location.search.substr(1).split('&'))
+
+    if ($.QueryString.faleComConsultor) {
+        $('#fale-consultor').click()
+    }
 });
 
 function changeWords(wordsArray, intervalo) {
