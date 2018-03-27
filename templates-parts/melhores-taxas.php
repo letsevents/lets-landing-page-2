@@ -16,13 +16,17 @@
 
                     <div class="row">
                         <div class="col-sm-6">
-                            <img class="taxa" data-src="<?php echo plugins_url('../img/TaxaBoleto.svg', __FILE__) ?>" class="img-responsive" >
+                            <div class='taxa'>
+                                <?php echo(file_get_contents(__DIR__ . '/../img/TaxaBoleto.svg')) ?>
+                            </div>
                             <p class="obs">
                                 <?php echo get_field('no_boleto') ?>
                             </p>
                         </div>
                         <div class="col-sm-6 ">
-                            <img class="taxa" data-src="<?php echo plugins_url('../img/TaxaCartao.svg', __FILE__) ?>" class="img-responsive" >
+                            <div class='taxa'>
+                                <?php echo(file_get_contents(__DIR__ . '/../img/TaxaCartao.svg')) ?>
+                            </div>
                             <p class="obs">
                                 <?php echo get_field('no_cartao') ?>
                             </p>
@@ -58,7 +62,10 @@
                     <h2>
                         <?php echo get_field('melhores_taxas_titulo_3') ?>
                     </h2>
-                    <img class="taxa" data-src="<?php echo plugins_url('../img/TaxaGratis.svg', __FILE__) ?>" class="img-responsive" >
+                    <div class='taxa'>
+                        <?php echo(file_get_contents(__DIR__ . '/../img/TaxaGratis.svg')) ?>
+                    </div>
+
                     <p class="obs">
                         <?php echo get_field('gratis_de_verdade') ?>
                     </p>
