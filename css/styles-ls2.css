@@ -7576,6 +7576,9 @@ header .logo {
     padding-left: 12px;
     padding-right: 12px;
   }
+  #ola-tecnologia #areas-atuacao {
+    display: block;
+  }
 }
 #ola-tecnologia .role {
   font-family: Bernina Sans Condense Bold;
@@ -8080,7 +8083,7 @@ header .logo {
   padding-bottom: 30px;
 }
 #ainda-com-duvidas .btn-verde {
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 15px 0px;
 }
 #ainda-com-duvidas .footer {
   margin-top: 80px;
