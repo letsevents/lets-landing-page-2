@@ -64,7 +64,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="https://lets.events">
+                                <a href="#venda-ingressos">
                                     <?php echo get_field('venda_de_ingressos') ?>
                                 </a>
                             </li>
