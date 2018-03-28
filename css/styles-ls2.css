@@ -6752,10 +6752,6 @@ body {
   src: url('font/BerninaSans-Web-Regular.woff');
 }
 @font-face {
-  font-family: Bernina Sans Bold;
-  src: url('font/BerninaSans-Web-Bold.woff');
-}
-@font-face {
   font-family: Bernina Sans Condense Bold;
   src: url('font/BerninaSans-Web-CondensedBold.woff');
 }
@@ -6814,6 +6810,16 @@ body {
   backface-visibility: visible !important;
   animation-fill-mode: both;
   animation-duration: .3s;
+}
+/* Emoji CSS */
+.em {
+  height: 1.5em;
+  width: 1.5em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  vertical-align: middle;
 }
 /*
 * CSS Lets LP 02
@@ -8096,8 +8102,8 @@ header .logo {
 }
 #ainda-com-duvidas .footer h2 {
   padding-bottom: 18px;
-  font-family: Bernina Sans Bold;
-  font-size: 14px;
+  font-family: Bernina Sans Regular;
+  font-size: 16px;
   font-weight: bold;
   line-height: 20px;
 }

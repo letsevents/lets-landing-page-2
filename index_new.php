@@ -6,7 +6,6 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="<?php echo plugins_url('css/styles-ls2.css', __FILE__) ?>">
-        <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
         <title>
             <?php echo get_field('title') ?>
         </title>

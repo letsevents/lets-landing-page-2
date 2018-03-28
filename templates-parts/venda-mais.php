@@ -14,15 +14,14 @@
                 </h2>
                 <ul class="lista">
                     <li>
-                        <i class="em em-rocket"></i>
+                        <i class="em" data-bg="https://twemoji.maxcdn.com/2/72x72/1f680.png"></i>
                         <?php echo get_field('vendas_mais_lista_item_1')?>
                     </li>
-                    <li>
-                        <i class="em em-bar_chart"></i>
+                    <li>                        <i class="em" data-bg="https://twemoji.maxcdn.com/2/72x72/1f4ca.png"></i>
                         <?php echo get_field('vendas_mais_lista_item_2')?>
                     </li>
                     <li>
-                        <i class="em em-money_mouth_face"></i>
+                        <i class="em" data-bg="https://twemoji.maxcdn.com/2/72x72/1f911.png"></i>
                         <?php echo get_field('vendas_mais_lista_item_3')?>
                     </li>
                 </ul>
