@@ -12,15 +12,15 @@
                 <h2><?php echo get_field('sua_lista_titulo') ?></h2>
                 <ul class="lista">
                     <li>
-                        <i class="em em-balloon"></i>
+                        <i class="em" data-bg="https://twemoji.maxcdn.com/2/72x72/1f388.png"></i>
                         <?php echo get_field('sua_lista_item_1') ?>
                     </li>
                     <li>
-                        <i class="em em-zap"></i>
+                        <i class="em" data-bg="https://twemoji.maxcdn.com/2/72x72/26a1.png"></i>
                         <?php echo get_field('sua_lista_item_2') ?>
                     </li>
                     <li>
-                        <i class="em em-sunglasses"></i>
+                        <i class="em" data-bg="https://twemoji.maxcdn.com/2/72x72/1f60e.png"></i>
                         <?php echo get_field('sua_lista_item_3') ?>
                     </li>
                 </ul>
