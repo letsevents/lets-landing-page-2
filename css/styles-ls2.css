@@ -7604,23 +7604,28 @@ header .logo {
   background-color: #6ED3FF;
   text-align: center;
 }
-#mesma-plataforma p {
+#mesma-plataforma .inner-wrapper {
   padding-top: 120px;
   padding-bottom: 120px;
+}
+@media (max-width: 991px) {
+  #mesma-plataforma .inner-wrapper {
+    padding-top: 56px;
+    padding-bottom: 60px;
+  }
+}
+#mesma-plataforma .inner-wrapper,
+#mesma-plataforma p {
   color: #ffffff;
   font-size: 26px;
   line-height: 42px;
 }
 @media (max-width: 991px) {
+  #mesma-plataforma .inner-wrapper,
   #mesma-plataforma p {
-    padding-top: 56px;
-    padding-bottom: 60px;
     font-size: 18px;
     line-height: 30px;
   }
-}
-#mesma-plataforma p span {
-  font-weight: bold;
 }
 #venda-mais .container {
   position: relative;
@@ -7844,6 +7849,7 @@ header .logo {
   color: #ffffff;
   text-align: center;
 }
+#conheca-seu-publico .inner-wrapper,
 #conheca-seu-publico p {
   color: #ffffff;
   font-family: Bernina Sans Regular;
@@ -7851,10 +7857,8 @@ header .logo {
   line-height: 28px;
   text-shadow: 0 0 10px #355e62;
 }
-#conheca-seu-publico p span {
-  font-weight: bold;
-}
 @media (max-width: 991px) {
+  #conheca-seu-publico .inner-wrapper,
   #conheca-seu-publico p {
     font-size: 14px;
     line-height: 24px;

@@ -6,7 +6,7 @@
                     <?php echo get_field('conheça_seu_publico_titulo') ?>
                 </h1>
             </div>
-            <div class="col-sm-6 col-sm-offset-3">
+            <div class="col-sm-6 col-sm-offset-3 inner-wrapper">
                 <?php echo get_field('conheca_seu_publico_descricao') ?>
             </div>
         </div>

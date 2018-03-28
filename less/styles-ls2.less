@@ -427,24 +427,27 @@ header{
     background-color: @azul;
     .text-center;
 
-    p{
+    .inner-wrapper {
         padding-top: 120px;
         padding-bottom: 120px;
+
+        @media (max-width: @screen-sm-max){
+            padding-top: 56px;
+            padding-bottom: 60px;
+        }
+    }
+
+    .inner-wrapper, p {
         color: @branco;
         font-size: 26px;
         line-height: 42px;
 
         @media (max-width: @screen-sm-max){
-            padding-top: 56px;
-            padding-bottom: 60px;
             font-size: 18px;
             line-height: 30px;
         }
-
-        span{
-            font-weight: bold;
-        }
     }
+
 }
 
 #venda-mais .container {
@@ -682,16 +685,12 @@ header{
         .text-center;
     }
 
-    p {
+    .inner-wrapper, p {
         color: @branco;
         font-family: @berdina;
         font-size: 16px;
         line-height: 28px;
         text-shadow: 0 0 10px #355e62;
-
-        span{
-            font-weight: bold;
-        }
 
         @media (max-width: @screen-sm-max){
             font-size: 14px;
