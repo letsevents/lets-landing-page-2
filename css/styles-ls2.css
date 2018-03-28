@@ -7418,6 +7418,7 @@ header .logo {
   height: 98px;
   padding-bottom: 26px;
   padding-top: 26px;
+  z-index: 5;
 }
 @media (max-width: 767px) {
   .navbar-default {
