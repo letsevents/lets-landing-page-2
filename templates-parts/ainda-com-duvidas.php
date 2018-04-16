@@ -48,7 +48,7 @@
                                 <a href="https://lets.events/blog">Blog</a>
                             </li>
                             <li>
-                                <a href="#melhores-taxas">
+                                <a href="#melhores-taxas-anchor">
                                     <?php echo get_field('preco') ?>
                                 </a>
                             </li>
@@ -64,7 +64,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="https://lets.events">
+                                <a href="#venda-ingressos">
                                     <?php echo get_field('venda_de_ingressos') ?>
                                 </a>
                             </li>

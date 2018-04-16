@@ -15,12 +15,14 @@
         </div>
 
         <div id="logo-clientes" class="row">
-            <img data-src="<?php echo get_field('quem_ja_esta_usando_logo_1') ?>" alt="" class="img-responsive">
-            <img data-src="<?php echo get_field('quem_ja_esta_usando_logo_2') ?>" alt="" class="img-responsive">
-            <img data-src="<?php echo get_field('quem_ja_esta_usando_logo_3') ?>" alt="" class="img-responsive">
-            <img data-src="<?php echo get_field('quem_ja_esta_usando_logo_4') ?>" alt="" class="img-responsive">
-            <img data-src="<?php echo get_field('quem_ja_esta_usando_logo_5') ?>" alt="" class="img-responsive">
-            <img data-src="<?php echo get_field('quem_ja_esta_usando_logo_6') ?>" alt="" class="img-responsive">
+            <?php
+                $i = 1;
+                while(true) {
+                    $logo = get_field('quem_ja_esta_usando_logo_' . $i);
+                    $i++;
+                    if (!$logo) { break; } ?>
+                <img data-src="<?php echo $logo ?>" alt="logo" class="img-responsive">
+            <?php } ?>
         </div>
 
     </div>

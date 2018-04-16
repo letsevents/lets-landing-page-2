@@ -28,10 +28,6 @@ body{
     src: url('font/BerninaSans-Web-Regular.woff');
 }
 @font-face{
-    font-family: Bernina Sans Bold;
-    src: url('font/BerninaSans-Web-Bold.woff');
-}
-@font-face{
     font-family: Bernina Sans Condense Bold;
     src: url('font/BerninaSans-Web-CondensedBold.woff');
 }
@@ -95,12 +91,22 @@ body{
     animation-duration: .3s;
 }
 
-@berdina-bold: Bernina Sans Bold;
 @berdina: Bernina Sans Regular;
 @berdina-condense: Bernina Sans Condense Bold;
 @lets: Lest Regular;
 @vinila-compressed: Vinila Compressed;
 
+/* Emoji CSS */
+.em {
+  height: 1.5em;
+  width: 1.5em;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  vertical-align: middle;
+}
 
 /*
 * CSS Lets LP 02
@@ -133,7 +139,6 @@ body{
     padding: 12px 25px;
     border-radius: 25px;
     .text-uppercase;
-    //box-shadow: 0 0 0 1px rgba(0,0,0,0.1), inset 0 -1px 0 0 rgba(0,0,0,0.3), 0 4px 10px 0 rgba(0,0,0,0.2);
 
 }
 
@@ -160,7 +165,6 @@ body{
 .btn-verde{
     .btn-padrao;
     .button-variant(@branco; @verde; @verde);
-
 }
 
 .btn-consultor{
@@ -231,7 +235,7 @@ header{
     height: 98px;
     padding-bottom: 26px;
     padding-top: 26px;
-
+    z-index: 5;
     @media (max-width: @screen-xs-max){
         padding: 3px 6px;
     }
@@ -349,6 +353,7 @@ header{
     .bkg-img;
     height: 100vh;
     position: relative;
+    z-index: 4;
 
     .page-content {
         position: absolute;
@@ -397,6 +402,8 @@ header{
             padding-right: 12px;
         }
 
+        #areas-atuacao { display: block; }
+
     }
 
     .role {
@@ -404,7 +411,7 @@ header{
         .text-uppercase;
         position: absolute;
         width: 200px;
-        bottom: 25px;
+        bottom: 10vh;
         left: 50%;
         margin-left: -100px;
         text-align: center;
@@ -416,8 +423,8 @@ header{
 
     .down {
         display: inline-block;
-        margin-top: 10px;
-        font-size: 30px;
+        margin-top: 8px;
+        font-size: 20px;
     }
 }
 
@@ -426,24 +433,27 @@ header{
     background-color: @azul;
     .text-center;
 
-    p{
+    .inner-wrapper {
         padding-top: 120px;
         padding-bottom: 120px;
+
+        @media (max-width: @screen-sm-max){
+            padding-top: 56px;
+            padding-bottom: 60px;
+        }
+    }
+
+    .inner-wrapper, p {
         color: @branco;
         font-size: 26px;
         line-height: 42px;
 
         @media (max-width: @screen-sm-max){
-            padding-top: 56px;
-            padding-bottom: 60px;
             font-size: 18px;
             line-height: 30px;
         }
-
-        span{
-            font-weight: bold;
-        }
     }
+
 }
 
 #venda-mais .container {
@@ -517,7 +527,7 @@ header{
 }
 
 .bkg-img() {
-    min-height: 500px;
+    min-height: 600px;
     height: 100vh;
 
     background: no-repeat center center ;
@@ -548,7 +558,7 @@ header{
         }
     }
 
-    p.desc{
+    .desc{
         color: #3C3C3C;
         font-size: 16px;
         line-height: 28px;
@@ -558,7 +568,7 @@ header{
         @media (max-width: @screen-sm-max){
             font-size: 14px;
             line-height: 24px;
-            padding-bottom: 36px;
+            padding-bottom: 20px;
         }
 
     }
@@ -592,7 +602,7 @@ header{
             padding-top: 5px;
             padding-bottom: 30px;
             .text-uppercase;
-            color: #DCDCDC;;
+            color: #A0A0A0;
             font-family: @berdina-condense;
         }
     }
@@ -630,6 +640,11 @@ header{
     }
 
 
+    .cartoes p { 
+        max-width: 320px; 
+        margin: 0 auto;
+    }
+
     .cartoes p, p.info{
         color: #646464;
         font-family: @berdina;
@@ -640,34 +655,23 @@ header{
             padding: 0 50px;
         }
     }
-
-
-
-
-
-
 }
 
 #sua-audiencia{
     .bkg-img;
 
-
-    h1{
-        padding-top: 84px;
-        padding-bottom: 12px;
+    h1 {
+        padding-top: 8vh;
+        padding-bottom: 1vh;
         color: #3C3C3C;
-
-        @media (max-width: @screen-sm-max){
-            padding-top: 50px;
-            padding-bottom: 8px;
-        }
     }
 
-    p{
+    p {
         color: #3C3C3C;
         font-family: @berdina;
         font-size: 16px;
         line-height: 28px;
+        text-shadow: 0 0 10px #fff;
 
         @media (max-width: @screen-sm-max){
             font-size: 14px;
@@ -680,26 +684,19 @@ header{
 #conheca-seu-publico{
     .bkg-img;
 
-    h1{
-        padding-top: 109px;
-        padding-bottom: 12px;
+    h1 {
+        padding-top: 7vh;
+        padding-bottom: 1vh;
         color: @branco;
         .text-center;
-
-        @media (max-width: @screen-sm-max){
-            padding-top: 50px;
-            padding-bottom: 10px;
-        }
     }
 
-    p{
+    .inner-wrapper, p {
         color: @branco;
         font-family: @berdina;
         font-size: 16px;
         line-height: 28px;
-        span{
-            font-weight: bold;
-        }
+        text-shadow: 0 0 10px #355e62;
 
         @media (max-width: @screen-sm-max){
             font-size: 14px;
@@ -716,7 +713,7 @@ header{
         color: #3C3C3C;
 
         @media (max-width: @screen-sm-max){
-            //padding-top: 50px;
+            padding-top: 50px;
             padding-bottom: 10px;
         }
 
@@ -760,126 +757,166 @@ header{
         .text-center;
 
         @media (max-width: @screen-sm-max){
-            padding-top: 140px;
+            padding-top: 50px;
             padding-bottom: 29px;
 
         }
-
     }
 
-
     #carousel-depoimentos{
-
         .carousel-indicators{
+            bottom: -46px;
+            z-index: 1;
 
-            .hidden-xs;
-            .hidden-sm;
-
-            bottom: 80px;
-
-            li{
+            li {
                 border: 1px solid #D8D8D8;
                 border-radius: 10px;
                 background-color: #D8D8D8;
 
-                &.active{
+                @media (max-width: @screen-sm-max) {
+                    width: 15px;
+                    height: 15px;
+                    margin: 5px;
+                }
 
+                &.active{
                     border: 1px solid #1C8FD9;
                     background-color:#1C8FD9;
-
                 }
-
             }
         }
 
+        .card-depoimento {
+            margin-bottom: 15px;
+            border: 1px solid #DCDCDC;
+            border-radius: 8px;
+            background-color: @branco;
+            box-shadow: 0 6px 10px 0 rgba(0,0,0,0.1);
 
-        .carousel-inner{
-            .item{
-                .card-depoimento{
+            display: flex;
 
-                    margin-bottom: 46px;
+            @media (max-width: @screen-sm-max){
+                margin-bottom: 24px;
+                flex-direction: column;
+                min-height: 460px;
+            }
+
+            img { width: 170px; }
+
+            h2 {
+                padding-top: 10px;
+                .text-center;
+                color: #1C8FD9;
+                font-family: @berdina-condense;
+                font-size: 18px;
+                line-height: 25px;
+                margin: 0 auto;
+
+                @media (min-width: @screen-md-min){
+                    font-size: 16px;
+                    line-height: 22px;
+                    max-width: 200px;
+                    height: 54px;
+                }
+            }
+
+            h3 {
+
+                padding-bottom: 10px;
+                color: #3C3C3C;
+                font-family: @berdina-condense;
+                font-size: 20px;
+                letter-spacing: 1px;
+                line-height: 28px;
+                .text-uppercase;
+
+                @media (max-width: @screen-sm-max){
+                    font-size: 20px;
+                    line-height: 28px;
+                }
+            }
+
+            p {
+
+                color: #3C3C3C;
+                font-family: @berdina;
+                font-size: 16px;
+                line-height: 28px;
+
+                @media (max-width: @screen-sm-max){
+                    font-size: 12px;
+                    line-height: 22px;
+
+                }
+            }
+
+            .card-depoimento__content,
+            .card-depoimento__img-wrapper {
+                padding: 24px;
+
+                @media (min-width: @screen-md-min){
                     padding: 48px;
-
-
-                    border: 1px solid #DCDCDC;
-                    border-radius: 8px;
-                    background-color: @branco;
-                    box-shadow: 0 6px 10px 0 rgba(0,0,0,0.1);
-
-
-                    img{
-                        width: 170px;
-                        height: auto;
-                        .center-block;
-                    }
-
-                    h2{
-                        padding-top: 43px;
-                        .text-center;
-                        color: #1C8FD9;
-                        font-family: @berdina-condense;
-                        font-size: 18px;
-                        line-height: 25px;
-
-                        @media (max-width: @screen-sm-max){
-                            padding-top: 18px;
-                            padding-bottom: 42px;
-                            font-size: 16px;
-                            line-height: 22px;
-                        }
-
-
-                    }
-
-                    h3{
-
-                        padding-bottom: 10px;
-                        color: #3C3C3C;
-                        font-family: @berdina-condense;
-                        font-size: 20px;
-                        letter-spacing: 1px;
-                        line-height: 28px;
-                        .text-uppercase;
-
-                        @media (max-width: @screen-sm-max){
-                            font-size: 20px;
-                            line-height: 28px;
-
-                        }
-
-                    }
-
-                    p{
-
-                        color: #3C3C3C;
-                        font-family: @berdina;
-                        font-size: 16px;
-                        line-height: 28px;
-
-                        @media (max-width: @screen-sm-max){
-                            font-size: 12px;
-                            line-height: 22px;
-
-                        }
-                    }
                 }
             }
+
+            .card-depoimento__img-wrapper {
+                border-right: 1px solid #ccc;
+
+                @media (max-width: @screen-sm-max){
+                    padding-bottom: 0;
+                }
+            }
+
+            .card-depoimento__img {
+                border-radius: 50%;
+                display: inline-block;
+                width: 170px;
+                height: 170px;
+                background-size: cover;
+                background-position: center center;
+            }
+
+            .card-depoimento__content {
+                flex-grow: 1;
+            }
         }
+
     }
 
-    #logo-clientes{
-        margin-top: 46px;
-        margin-bottom: 99px;
+    #logo-clientes {
+        margin-top: 48px;
+        margin-bottom: 90px;
 
         display: flex;
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
 
+        @media (max-width: @screen-sm-max){
+            margin-top: 36px;
+            margin-bottom: 50px;
+        }
+
         img {
-            max-width: 128px;
+            -webkit-filter: grayscale(1);
+            filter: grayscale(1);
+            opacity: 0.5;
+
+            transition: all 0.4s;
+
+            max-width: 96px;
             height: auto;
-            margin: 30px;
+            margin: 20px 30px 0;
+
+            @media (max-width: @screen-xs-max){
+                margin: 20px;
+            }
+
+            &:hover {
+                -webkit-filter: grayscale(0);
+                filter: grayscale(0);
+                opacity: 1;
+            }
         }
     }
 
@@ -889,7 +926,7 @@ header{
     background: linear-gradient(180deg, @azul-2 0%, #1C8FD9 100%, #1C8FD9 100%);
     color: @branco;
     position: relative;
-    z-index: 2; // floating CTA will hide behind this section //
+    z-index: 4; // floating CTA will hide behind this section //
 
     .text-center;
 
@@ -911,6 +948,10 @@ header{
         padding-bottom: 30px;
     }
 
+    .btn-verde {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 15px 0px;
+    }
+
     .footer {
         margin-top: 80px;
         padding: 30px;
@@ -925,10 +966,10 @@ header{
 
         .text-left;
 
-        h2{
+        h2 {
             padding-bottom: 18px;
-            font-family: @berdina-bold;
-            font-size: 14px;
+            font-family: @berdina;
+            font-size: 16px;
             font-weight: bold;
             line-height: 20px;
         }
@@ -1047,20 +1088,17 @@ header{
             }
 
         }
-
-
-
-
     }
 }
 
 .cta-fixo {
     position: fixed;
-    bottom: 2vh;
+    bottom: 4vh;
     left: 50%;
     transition: opacity 0.8s;
     transform: translateX(-50%);
     opacity: 1;
+    z-index: 2;
 }
 
 .cta-fixo-hidden {

@@ -1,6 +1,13 @@
 var gulp = require('gulp');
 var less = require('gulp-less');
+let cleanCSS = require('gulp-clean-css');
 
+gulp.task('build', () => {
+  return gulp.src('less/styles-ls2.less')
+        .pipe(less())
+        .pipe(cleanCSS({compatibility: 'ie8'}))
+        .pipe(gulp.dest('css/'))
+});
 
 /* Task to compile less */
 gulp.task('compile-less', function () {
