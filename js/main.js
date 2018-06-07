@@ -65,7 +65,6 @@ function changeWords(wordsArray, intervalo) {
 function handleFixedCTAPosition() {
     var SCROLL_THRESHOLD = 1/5;
     var lastStateWasVisible = false;
-    var $cta = $("#cta-fixo");
 
     var scroll = window.requestAnimationFrame ||
                  window.webkitRequestAnimationFrame ||
@@ -80,7 +79,7 @@ function handleFixedCTAPosition() {
         var shouldBeVisible = top > (window.innerHeight * SCROLL_THRESHOLD);
 
         if (shouldBeVisible != lastStateWasVisible) {
-            $cta.toggleClass('cta-fixo-hidden', !shouldBeVisible);
+            $("#cta-fixo").toggleClass('cta-fixo-hidden', !shouldBeVisible);
             lastStateWasVisible = shouldBeVisible;
         }
 

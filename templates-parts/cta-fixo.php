@@ -1,1 +1,1 @@
-<a id='cta-fixo' class="cta-fixo cta-fixo-hidden btn-cinza uppercase" href="https://app.lets.events/events/new?utm_source=landingV2&utm_medium=navbarfixed"> <?php echo get_field('botao-ola-tecnologia')?></button>
+<?php echo get_field('lets-em-2-min')?>
