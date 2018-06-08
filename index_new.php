@@ -35,7 +35,6 @@
         <?php include 'templates-parts/menos-fila.php'; ?>
         <?php include 'templates-parts/quem-ja-esta-usando.php'; ?>
         <?php include 'templates-parts/ainda-com-duvidas.php'; ?>
-        <?php include 'templates-parts/lets-2-min.php'; ?>
         <?php include 'templates-parts/modal.php'; ?>
         <?php include 'templates-parts/cta-fixo.php'; ?>
         <!-- Scripts -->

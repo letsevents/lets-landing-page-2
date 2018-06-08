@@ -13,7 +13,7 @@
                         <?php echo get_field('paragrafo_ola_tecnologia')?>
                     </p>
 
-                    <a class="btn-verde uppercase" href="https://app.lets.events/events/new?utm_source=landingV2&utm_medium=homecta"> <?php echo get_field('botao-ola-tecnologia')?></a>
+                    <?php echo get_field('ctas_do_ola_tecnologia')?>
                 </div>
             </div>
         </div>

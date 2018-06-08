@@ -18,8 +18,7 @@ function pm_remove_all_styles() {
 add_action('wp_print_styles', 'pm_remove_all_styles', 100);
 
 // There are plugins in production including old versions of jQuery
-// This way we ensure the jquery script we declared in the index_new.php file
-// is the one used.
+// This will remove them and use our specific version instead
 function include_our_jquery() {
 	wp_deregister_script('jquery');
 	wp_enqueue_script('jquery', 'https://code.jquery.com/jquery-2.2.4.min.js', array(), null, true);
