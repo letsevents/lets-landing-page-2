@@ -5,13 +5,13 @@
         <div class="row">
             <div class="col-md-6">
                 <div class='page-content'>
-                    <h1>
+                    <div id="saudacao">
                         <?php echo get_field('saudacao')?>
                         <span id="areas-atuacao"></span>
-                    </h1>
-                    <p class='title-subtext'>
+                    </div>
+                    <h1 class='title-subtext'>
                         <?php echo get_field('paragrafo_ola_tecnologia')?>
-                    </p>
+                    </h1>
 
                     <?php echo get_field('ctas_do_ola_tecnologia')?>
                 </div>

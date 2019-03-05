@@ -2,9 +2,9 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
-                <h1>
+                <h2 class="big-title">
                     <?php echo get_field('veja_quem_ja_esta_usando') ?>
-                </h1>
+                </h2>
             </div>
         </div>
 

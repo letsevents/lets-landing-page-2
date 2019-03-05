@@ -6809,7 +6809,7 @@ body {
   -webkit-backface-visibility: visible !important;
   backface-visibility: visible !important;
   animation-fill-mode: both;
-  animation-duration: .3s;
+  animation-duration: 0.3s;
 }
 /* Emoji CSS */
 .em {
@@ -6916,8 +6916,8 @@ fieldset[disabled] a.btn-padrao {
   border-radius: 25px;
   text-transform: uppercase;
   color: #ffffff;
-  background-color: #FFA500;
-  border-color: #FFA500;
+  background-color: #ffa500;
+  border-color: #ffa500;
 }
 .btn-amarelo:focus,
 .btn-amarelo:active:focus,
@@ -6999,11 +6999,11 @@ fieldset[disabled] .btn-amarelo:focus,
 .btn-amarelo.disabled.focus,
 .btn-amarelo[disabled].focus,
 fieldset[disabled] .btn-amarelo.focus {
-  background-color: #FFA500;
-  border-color: #FFA500;
+  background-color: #ffa500;
+  border-color: #ffa500;
 }
 .btn-amarelo .badge {
-  color: #FFA500;
+  color: #ffa500;
   background-color: #ffffff;
 }
 .btn-cinza {
@@ -7028,9 +7028,11 @@ fieldset[disabled] .btn-amarelo.focus {
   padding: 12px 25px;
   border-radius: 25px;
   text-transform: uppercase;
-  background-color: #F0F0F0;
-  border-color: #F0F0F0;
   color: #1C8FD9;
+  background-color: #F0F0F0;
+  border-color: #f0f0f0;
+  box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.35);
+  color: #1c8fd9;
   font-family: Bernina Sans Condense Bold;
   font-size: 16px;
   letter-spacing: 1px;
@@ -7117,7 +7119,7 @@ fieldset[disabled] .btn-cinza:focus,
 .btn-cinza[disabled].focus,
 fieldset[disabled] .btn-cinza.focus {
   background-color: #F0F0F0;
-  border-color: #F0F0F0;
+  border-color: #f0f0f0;
 }
 .btn-cinza .badge {
   color: #F0F0F0;
@@ -7153,8 +7155,8 @@ fieldset[disabled] .btn-cinza.focus {
   border-radius: 25px;
   text-transform: uppercase;
   color: #ffffff;
-  background-color: #52B152;
-  border-color: #52B152;
+  background-color: #52b152;
+  border-color: #52b152;
 }
 .btn-verde:focus,
 .btn-verde:active:focus,
@@ -7236,11 +7238,11 @@ fieldset[disabled] .btn-verde:focus,
 .btn-verde.disabled.focus,
 .btn-verde[disabled].focus,
 fieldset[disabled] .btn-verde.focus {
-  background-color: #52B152;
-  border-color: #52B152;
+  background-color: #52b152;
+  border-color: #52b152;
 }
 .btn-verde .badge {
-  color: #52B152;
+  color: #52b152;
   background-color: #ffffff;
 }
 .btn-consultor {
@@ -7269,8 +7271,8 @@ fieldset[disabled] .btn-verde.focus {
   border-radius: 25px;
   text-transform: uppercase;
   color: #ffffff;
-  background-color: #FFA500;
-  border-color: #FFA500;
+  background-color: #ffa500;
+  border-color: #ffa500;
   margin-top: 8px;
   margin-bottom: 8px;
   margin-top: 3px;
@@ -7356,11 +7358,11 @@ fieldset[disabled] .btn-consultor:focus,
 .btn-consultor.disabled.focus,
 .btn-consultor[disabled].focus,
 fieldset[disabled] .btn-consultor.focus {
-  background-color: #FFA500;
-  border-color: #FFA500;
+  background-color: #ffa500;
+  border-color: #ffa500;
 }
 .btn-consultor .badge {
-  color: #FFA500;
+  color: #ffa500;
   background-color: #ffffff;
 }
 .btn-consultor.btn-sm {
@@ -7375,6 +7377,20 @@ fieldset[disabled] .btn-consultor.focus {
   display: flex;
   display: -webkit-flex;
   flex-wrap: wrap;
+}
+.big-title {
+  font-family: Bernina Sans Condense Bold;
+  font-size: 50px;
+  line-height: 56px;
+  text-transform: uppercase;
+}
+@media (max-width: 991px) {
+  .big-title {
+    padding-top: 0px;
+    font-size: 30px;
+    line-height: 38px;
+    text-align: center;
+  }
 }
 h1 {
   font-family: Bernina Sans Condense Bold;
@@ -7409,7 +7425,7 @@ header {
   font-family: Lest Regular;
 }
 header .logo {
-  color: #1D6CAD;
+  color: #1d6cad;
   float: left;
   font-size: 2.6rem;
   line-height: 1;
@@ -7551,22 +7567,34 @@ header .logo {
   transform: translateY(-50%) translateY(-98px);
   left: 0;
 }
-#ola-tecnologia .title-subtext {
-  max-width: 500px;
-  margin: 0 auto;
-}
-#ola-tecnologia h1 {
+#ola-tecnologia #saudacao {
+  font-family: Bernina Sans Condense Bold;
+  font-size: 50px;
+  line-height: 56px;
+  text-transform: uppercase;
   color: #ffffff;
 }
-#ola-tecnologia p {
+@media (max-width: 991px) {
+  #ola-tecnologia #saudacao {
+    padding-top: 0px;
+    font-size: 30px;
+    line-height: 38px;
+    text-align: center;
+  }
+}
+#ola-tecnologia .title-subtext {
+  font-family: Bernina Sans Regular;
   padding-top: 12px;
   padding-bottom: 55px;
   color: #ffffff;
   font-size: 18px;
   line-height: 30px;
+  text-transform: none;
+  max-width: 500px;
+  margin: 0 auto;
 }
 @media (max-width: 991px) {
-  #ola-tecnologia p {
+  #ola-tecnologia .title-subtext {
     padding-top: 9px;
     padding-bottom: 34px;
     font-size: 16px;
@@ -7607,7 +7635,7 @@ header .logo {
   font-size: 20px;
 }
 #mesma-plataforma {
-  background-color: #6ED3FF;
+  background-color: #6ed3ff;
   text-align: center;
 }
 #mesma-plataforma .inner-wrapper {
@@ -7707,20 +7735,20 @@ header .logo {
     padding-bottom: 58px;
   }
 }
-#melhores-taxas h1 {
+#melhores-taxas h2.big-title {
   padding-top: 261px;
   padding-bottom: 12px;
-  color: #3C3C3C;
+  color: #3c3c3c;
   text-align: center;
 }
 @media (max-width: 991px) {
-  #melhores-taxas h1 {
+  #melhores-taxas h2.big-title {
     padding-top: 0px;
     padding-bottom: 8px;
   }
 }
 #melhores-taxas .desc {
-  color: #3C3C3C;
+  color: #3c3c3c;
   font-size: 16px;
   line-height: 28px;
   text-align: center;
@@ -7734,7 +7762,7 @@ header .logo {
   }
 }
 #melhores-taxas .tabela-lets {
-  border: 1px solid #DCDCDC;
+  border: 1px solid #dcdcdc;
   border-radius: 8px;
   margin-bottom: 24px;
 }
@@ -7761,11 +7789,11 @@ header .logo {
   padding-top: 5px;
   padding-bottom: 30px;
   text-transform: uppercase;
-  color: #A0A0A0;
+  color: #a0a0a0;
   font-family: Bernina Sans Condense Bold;
 }
 #melhores-taxas .tabela-pago h2 {
-  background-color: #DEEAF3;
+  background-color: #deeaf3;
 }
 @media (max-width: 991px) {
   #melhores-taxas .tabela-gratuito {
@@ -7773,7 +7801,7 @@ header .logo {
   }
 }
 #melhores-taxas .tabela-gratuito h2 {
-  background-color: #E4F9DC;
+  background-color: #e4f9dc;
 }
 #melhores-taxas .credit-cards {
   padding-left: 0;
@@ -7820,13 +7848,13 @@ header .logo {
   background-size: cover;
   display: block;
 }
-#sua-audiencia h1 {
+#sua-audiencia h2.big-title {
   padding-top: 8vh;
   padding-bottom: 1vh;
-  color: #3C3C3C;
+  color: #3c3c3c;
 }
 #sua-audiencia p {
-  color: #3C3C3C;
+  color: #3c3c3c;
   font-family: Bernina Sans Regular;
   font-size: 16px;
   line-height: 28px;
@@ -7849,7 +7877,7 @@ header .logo {
   background-size: cover;
   display: block;
 }
-#conheca-seu-publico h1 {
+#conheca-seu-publico h2.big-title {
   padding-top: 7vh;
   padding-bottom: 1vh;
   color: #ffffff;
@@ -7870,19 +7898,19 @@ header .logo {
     line-height: 24px;
   }
 }
-#menos-fila h1 {
+#menos-fila h2.big-title {
   padding-top: 142px;
   padding-bottom: 12px;
-  color: #3C3C3C;
+  color: #3c3c3c;
 }
 @media (max-width: 991px) {
-  #menos-fila h1 {
+  #menos-fila h2.big-title {
     padding-top: 50px;
     padding-bottom: 10px;
   }
 }
 #menos-fila p {
-  color: #3C3C3C;
+  color: #3c3c3c;
   font-family: Bernina Sans Regular;
   font-size: 16px;
   line-height: 28px;
@@ -7901,14 +7929,14 @@ header .logo {
     min-height: auto;
   }
 }
-#quem-ja-esta-usando h1 {
+#quem-ja-esta-usando h2.big-title {
   padding-top: 151px;
   padding-bottom: 60px;
-  color: #3C3C3C;
+  color: #3c3c3c;
   text-align: center;
 }
 @media (max-width: 991px) {
-  #quem-ja-esta-usando h1 {
+  #quem-ja-esta-usando h2.big-title {
     padding-top: 50px;
     padding-bottom: 29px;
   }
@@ -7918,9 +7946,9 @@ header .logo {
   z-index: 1;
 }
 #quem-ja-esta-usando #carousel-depoimentos .carousel-indicators li {
-  border: 1px solid #D8D8D8;
+  border: 1px solid #d8d8d8;
   border-radius: 10px;
-  background-color: #D8D8D8;
+  background-color: #d8d8d8;
 }
 @media (max-width: 991px) {
   #quem-ja-esta-usando #carousel-depoimentos .carousel-indicators li {
@@ -7930,12 +7958,12 @@ header .logo {
   }
 }
 #quem-ja-esta-usando #carousel-depoimentos .carousel-indicators li.active {
-  border: 1px solid #1C8FD9;
-  background-color: #1C8FD9;
+  border: 1px solid #1c8fd9;
+  background-color: #1c8fd9;
 }
 #quem-ja-esta-usando #carousel-depoimentos .card-depoimento {
   margin-bottom: 15px;
-  border: 1px solid #DCDCDC;
+  border: 1px solid #dcdcdc;
   border-radius: 8px;
   background-color: #ffffff;
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
@@ -7954,7 +7982,7 @@ header .logo {
 #quem-ja-esta-usando #carousel-depoimentos .card-depoimento h2 {
   padding-top: 10px;
   text-align: center;
-  color: #1C8FD9;
+  color: #1c8fd9;
   font-family: Bernina Sans Condense Bold;
   font-size: 18px;
   line-height: 25px;
@@ -7970,7 +7998,7 @@ header .logo {
 }
 #quem-ja-esta-usando #carousel-depoimentos .card-depoimento h3 {
   padding-bottom: 10px;
-  color: #3C3C3C;
+  color: #3c3c3c;
   font-family: Bernina Sans Condense Bold;
   font-size: 20px;
   letter-spacing: 1px;
@@ -7984,7 +8012,7 @@ header .logo {
   }
 }
 #quem-ja-esta-usando #carousel-depoimentos .card-depoimento p {
-  color: #3C3C3C;
+  color: #3c3c3c;
   font-family: Bernina Sans Regular;
   font-size: 16px;
   line-height: 28px;
@@ -8058,18 +8086,18 @@ header .logo {
   opacity: 1;
 }
 #ainda-com-duvidas {
-  background: linear-gradient(180deg, #3CC2EE 0%, #1C8FD9 100%, #1C8FD9 100%);
+  background: linear-gradient(180deg, #3cc2ee 0%, #1c8fd9 100%, #1c8fd9 100%);
   color: #ffffff;
   position: relative;
   z-index: 4;
   text-align: center;
 }
-#ainda-com-duvidas h1 {
+#ainda-com-duvidas h2.big-title {
   padding-top: 140px;
   padding-bottom: 12px;
 }
 @media (max-width: 991px) {
-  #ainda-com-duvidas h1 {
+  #ainda-com-duvidas h2.big-title {
     padding-top: 50px;
     padding-bottom: 10px;
   }
@@ -8168,11 +8196,17 @@ header .logo {
 .from .from-bh img {
   width: 60px;
 }
+#lets-2-min {
+  padding: 50px 0;
+  background-color: #ffffff;
+  text-align: center;
+}
 #myModal {
   background-color: #ffffff;
 }
 #myModal .modal-dialog {
-  top: 15%;
+  width: 600px;
+  margin: 15% auto;
 }
 #myModal .modal-dialog .modal-content {
   background-color: black;
@@ -8195,13 +8229,6 @@ header .logo {
   transform: translateX(-50%);
   opacity: 1;
   z-index: 2;
-}
-.cta-fixo span {
-  margin-right: 2px;
-}
-.cta-fixo .btn-cinza,
-.cta-fixo .btn-verde {
-  box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.35);
 }
 .cta-fixo-hidden {
   opacity: 0;

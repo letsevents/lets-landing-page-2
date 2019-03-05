@@ -2,9 +2,9 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-md-6 col-md-offset-3">
-                <h1>
+                <h2 class="big-title">
                     <?php echo get_field('ainda_com_duvidas_titulo') ?>
-                </h1>
+                </h2>
             </div>
             <div class="col-sm-12 col-md-6 col-md-offset-3">
                 <p>
