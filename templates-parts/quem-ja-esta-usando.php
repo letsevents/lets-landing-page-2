@@ -21,7 +21,7 @@
                     $logo = get_field('quem_ja_esta_usando_logo_' . $i);
                     $i++;
                     if (!$logo) { break; } ?>
-                <img data-src="<?php echo $logo ?>" alt="logo" class="img-responsive">
+                <img data-src="<?php echo $logo ?>" alt="Logo cliente Lets.events" class="img-responsive">
             <?php } ?>
         </div>
 

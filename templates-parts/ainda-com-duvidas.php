@@ -24,17 +24,17 @@
                 <ul class="list-inline social">
                     <li>
                         <a href="https://facebook.com/letseventsofficial" target="_blank">
-                            <img data-src="<?php echo plugins_url('../img/Facebook@2x.png', __FILE__) ?>" alt="" class="img-responsive">
+                            <img data-src="<?php echo plugins_url('../img/Facebook@2x.png', __FILE__) ?>" alt="Lets.events facebook" class="img-responsive">
                         </a>
                     </li>
                     <li>
                         <a href="https://twitter.com/lets_events" target="_blank">
-                            <img data-src="<?php echo plugins_url('../img/Twitter@2x.png', __FILE__) ?>" alt="" class="img-responsive">
+                            <img data-src="<?php echo plugins_url('../img/Twitter@2x.png', __FILE__) ?>" alt="Lets.events Twitter" class="img-responsive">
                         </a>
                     </li>
                     <li>
                         <a href="https://www.instagram.com/lets.events" target="_blank">
-                            <img data-src="<?php echo plugins_url('../img/Instagram@2x.png', __FILE__) ?>" alt="" class="img-responsive">
+                            <img data-src="<?php echo plugins_url('../img/Instagram@2x.png', __FILE__) ?>" alt="Lets.events Instagram" class="img-responsive">
                         </a>
                     </li>
                 </ul>
@@ -45,7 +45,7 @@
                         <h2><?php echo get_field('institucional') ?></h2>
                         <ul class="list-unstyled">
                             <li>
-                                <a href="https://lets.events/blog">Blog</a>
+                                <a href="https://blog.lets.events">Blog</a>
                             </li>
                             <li>
                                 <a href="#melhores-taxas-anchor">
@@ -59,7 +59,7 @@
                             </h2>
                         <ul class="list-unstyled">
                             <li>
-                                <a href="https://lets.events/listas-de-convidados">
+                                <a href="https://lets.events/listas-de-convidados/">
                                     <?php echo get_field('gestao_de_listas') ?>
                                 </a>
                             </li>

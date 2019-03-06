@@ -14,12 +14,12 @@
                     <div class="card-depoimento__img" data-bg="<?php echo get_field('foto') ?>">
                     </div>
 
-                    <h2>
+                    <div class="depoimento-nome">
                         <?php echo get_field('autor') ?>, <?php echo get_field('referencia_do_autor') ?>
-                    </h2>
+                    </div>
                 </div>
                 <div class='card-depoimento__content'>
-                    <h3><?php echo get_field('titulo') ?></h3>
+                    <h2><?php echo get_field('titulo') ?></h2>
                     <p>
                         <?php echo get_field('depoimento') ?>
                     </p>

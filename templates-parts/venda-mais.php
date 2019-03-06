@@ -5,7 +5,7 @@
         <div class="row equal ">
 
             <div class="col-xs-12 visible-xs visible-sm">
-                <img src="<?php echo plugins_url('../img/ingresso.svg', __FILE__); ?>" alt="" class="img-responsive">
+                <img src="<?php echo plugins_url('../img/ingresso.svg', __FILE__); ?>" alt="Venda de ingressos online" class="img-responsive">
             </div>
 
             <div class="col-xs-12 col-md-7 col-md-offset-5 col-lg-6 col-lg-offset-6">
